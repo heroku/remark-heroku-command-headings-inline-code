@@ -6,20 +6,16 @@ const processMarkdown = async (md) => {
   return remark().use(plugin).process(md)
 }
 
-let markdown = null
-beforeAll(() => {
-  markdown = fs.readFileSync('./test/generated_docs.md', 'utf8')
-})
-
-test('it adds an error when there are no examples', async () => {
-  markdown = fs.readFileSync('./test/two_commands_no_examples.md', 'utf8')
+test('it adds an error when headings need inline code', async () => {
+  markdown = fs.readFileSync('./test/heading_no_inline_code.md', 'utf8')
 
   const lint = await processMarkdown(markdown)
   expect(lint.messages.length).toBe(2)
-  expect(lint.messages[0].message).toBe('Command has no usage example')
+  expect(lint.messages[0].message).toBe('Command heading without inline code')
+  expect(lint.messages[1].message).toBe('Command heading without inline code')
 })
 test('it does not add error messages when one is present', async () => {
-  markdown = fs.readFileSync('./test/command_with_example.md', 'utf8')
+  markdown = fs.readFileSync('./test/heading_with_inline_code.md', 'utf8')
 
   const lint = await processMarkdown(markdown)
   expect(lint.messages.length).toBe(0)

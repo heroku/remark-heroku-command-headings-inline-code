@@ -1,10 +1,10 @@
 {
-  "name": "remark-heroku-example-command",
+  "name": "remark-heroku-command-headings-inline-code",
   "version": "1.0.0",
   "author": "Matthew Origer <cli-squad@heroku.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KarateCowboy/remark-heroku-example-command.git"
+    "url": "git+https://github.com/KarateCowboy/remark-heroku-command-headings-inline-code.git"
   },
   "license": "ISC",
   "dependencies": {
@@ -13,7 +13,6 @@
     "remark-lint": "^5.2.0",
     "unified-lint-rule": "^1.0.1",
     "unist-util-find": "^1.0.1",
-    "unist-util-find-after": "^2.0.1",
     "unist-util-is": "^2.1.1",
     "unist-util-visit": "^1.1.1"
   },
@@ -26,13 +25,13 @@
     "remark-cli": "^2.1.0",
     "remark-lint": "^5.2.0"
   },
-  "description": "A remark-lint rule to make sure command headings have an example.",
+  "description": "A remark-lint rule to make sure command headings have inline code.",
   "main": "lib/index.js",
   "directories": {
     "test": "test"
   },
   "bugs": {
-    "url": "https://github.com/KarateCowboy/remark-heroku-example-command/issues"
+    "url": "https://github.com/KarateCowboy/remark-heroku-command-headings-inline-code/issues"
   },
-  "homepage": "https://github.com/KarateCowboy/remark-heroku-example-command#readme"
+  "homepage": "https://github.com/KarateCowboy/remark-heroku-command-headings-inline-code#readme"
 }
