@@ -20,3 +20,11 @@ test('it does not add error messages when one is present', async () => {
   const lint = await processMarkdown(markdown)
   expect(lint.messages.length).toBe(0)
 })
+
+test('it does not mistake overview heading for command headings', async () => {
+  markdown = fs.readFileSync('./test/topic_overview_heading.md', 'utf8')
+
+  const lint = await processMarkdown(markdown)
+  expect(lint.messages.length).toBe(0)
+
+})
