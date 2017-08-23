@@ -17,9 +17,11 @@
     "unist-util-visit": "^1.1.1"
   },
   "scripts": {
-		"test": "./node_modules/.bin/jest",
+    "test": "./node_modules/.bin/jest",
     "start": "remark .",
-    "build": "babel src -d lib"
+    "build": "babel src -d lib",
+    "clean": "rimraf lib",
+    "prepare": "npm run clean && npm run build"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -32,7 +34,7 @@
     "test": "test"
   },
   "bugs": {
-    "url": "https://github.com/KarateCowboy/remark-heroku-command-headings-inline-code/issues"
+    "url": "https://github.com/heroku/remark-heroku-command-headings-inline-code/issues"
   },
-  "homepage": "https://github.com/KarateCowboy/remark-heroku-command-headings-inline-code#readme"
+  "homepage": "https://github.com/heroku/remark-heroku-command-headings-inline-code#readme"
 }
