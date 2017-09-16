@@ -1,7 +1,7 @@
 {
-  "name": "remark-heroku-command-headings-inline-code",
+  "name": "@heroku/remark-heroku-command-headings-inline-code",
   "version": "1.0.4",
-  "author": "Matthew Origer <cli-squad@heroku.com>",
+  "author": "Matthew Origer",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KarateCowboy/remark-heroku-command-headings-inline-code.git"
