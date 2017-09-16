@@ -1,6 +1,6 @@
 {
   "name": "@heroku/remark-heroku-command-headings-inline-code",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "Matthew Origer",
   "repository": {
     "type": "git",
