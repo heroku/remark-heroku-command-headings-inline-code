@@ -8,10 +8,10 @@
   },
   "license": "ISC",
   "dependencies": {
-    "remark": "^8.0.0",
-    "remark-lint": "^5.2.0",
+    "remark": "^15.0.0",
+    "remark-lint": "^6.0.0",
     "unified-lint-rule": "^1.0.1",
-    "unist-util-find": "^1.0.1",
+    "unist-util-find": "^1.0.2",
     "unist-util-is": "^2.1.1",
     "unist-util-visit": "^1.1.1"
   },
@@ -26,7 +26,7 @@
     "babel-cli": "^6.26.0",
     "jest": "^21.1.0",
     "remark-cli": "^2.1.0",
-    "remark-lint": "^5.2.0"
+    "remark-lint": "^6.0.0"
   },
   "description": "A remark-lint rule to make sure command headings have inline code.",
   "main": "lib/index.js",
